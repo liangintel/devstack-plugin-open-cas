@@ -9,7 +9,7 @@ OPENCAS_CACHE_SIZE=${OPENCAS_CACHE_SIZE:-1048576}
 function git_clone_opencas {
     cd $OPENCAS_REPO_DIR
     # git_clone $OPENCAS_REPO_URL $OPENCAS_REPO_DIR $OPENCAS_REPO_BRANCH
-    # git clone https://github.com/Open-CAS/open-cas-linux.git
+    git clone $OPENCAS_REPO_URL
     cd open-cas-linux
     git submodule update --init
 }

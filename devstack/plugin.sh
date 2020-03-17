@@ -1,14 +1,10 @@
 # Devstack open-cas plugin
-source /home/liang/functions-common
 
 OPENCAS_REPO_DIR=${OPENCAS_REPO_DIR:-/home/liang}
 OPENCAS_REPO_URL=${OPENCAS_REPO_URL:-https://github.com/Open-CAS/open-cas-linux.git}
 OPENCAS_REPO_BRANCH=master
 OPENCAS_CACHE_SIZE=${OPENCAS_CACHE_SIZE:-1048576}
 
-function echo_summary {
-    echo $@
-}
 
 function git_clone_opencas {
     cd $OPENCAS_REPO_DIR
